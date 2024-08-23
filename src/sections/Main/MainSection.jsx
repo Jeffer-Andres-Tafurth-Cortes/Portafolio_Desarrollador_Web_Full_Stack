@@ -6,7 +6,7 @@ import gitHubLight from '../../assets/github-light.svg'
 import gitHubDark from '../../assets/github-dark.svg'
 import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
-import cv from '../../assets/cv.txt'
+import cv from '../../assets/CV Desarrollador Web Full Stack.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 function MainSection(){
