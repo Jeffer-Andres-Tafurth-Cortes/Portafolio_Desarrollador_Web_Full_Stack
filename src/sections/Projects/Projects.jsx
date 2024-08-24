@@ -9,6 +9,7 @@ function Projects () {
     <>
       <section id='projects' className={styles.container}>
         <h1 className='sectionTitle'>Proyectos</h1>
+        <p className={styles.textoCaption}>Posiblemente algun proyecto puede tardar algunos segundos en cargar</p>
         <div className={styles.projectsContainer}>
 
           <ProjectCard 
@@ -17,7 +18,6 @@ function Projects () {
             description='MongoDB, ExpressJS, React, NodeJS'
             link='https://mi-tienda-mern.onrender.com'
             correoPrueba='No se necesita autenticacion'
-            contraseñaPrueba='Puede tardar unos segundos'
           />
 
           <ProjectCard 

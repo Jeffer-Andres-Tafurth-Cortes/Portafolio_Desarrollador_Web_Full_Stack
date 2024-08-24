@@ -39,6 +39,15 @@
   }
 }
 
+p{
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.textoCaption {
+  margin-bottom: 30px;
+}
+
 @media (width >= 800px){
   .projectsContainer{
     flex-direction: row;
