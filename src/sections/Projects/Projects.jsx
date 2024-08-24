@@ -17,7 +17,8 @@ function Projects () {
             title='Tienda Online' 
             description='MongoDB, ExpressJS, React, NodeJS'
             link='https://mi-tienda-mern.onrender.com'
-            correoPrueba='No se necesita autenticacion'
+            correoPrueba='No se necesita'
+            contraseñaPrueba='autenticacion'
           />
 
           <ProjectCard 
