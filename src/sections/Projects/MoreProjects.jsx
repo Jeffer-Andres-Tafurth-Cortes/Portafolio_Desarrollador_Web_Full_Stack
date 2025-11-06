@@ -2,6 +2,7 @@ import ProjectCard from '../../common/ProjectCard'
 import styles from './MoreProjects.module.css'
 import ImgPro1 from '../../assets/ImgPro1.png'
 import ImgPro2 from '../../assets/ImgPro2.png'
+import ImgPro3 from '../../assets/ImgPro3.png'
 import ImgPro4 from '../../assets/ImgPro4.png'
 
 
@@ -32,12 +33,12 @@ function MoreProjects () {
         />
 
         <ProjectCard 
-          src={''} 
+          src={ImgPro3} 
           description='HTML, CSS & TypeScript'
           link='https://jeffur-quote-machine-ts.netlify.app/'
           correoPrueba='No se necesita'
           contraseñaPrueba='autenticacion'
-          title='Maquina de frases' 
+          title='Motivaciones Aleatorias' 
         />
 
         <ProjectCard 
