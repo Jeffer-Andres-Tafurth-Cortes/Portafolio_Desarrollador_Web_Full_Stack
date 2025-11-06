@@ -12,7 +12,7 @@ import { useTheme } from '../../common/ThemeContext'
 function MainSection(){
 
   //Cambio del Theme dark/light usando hook useContext ( el hook se llama useTheme )
-  const { theme, toogleTheme} = useTheme()
+  const { theme, toogleTheme } = useTheme()
 
   //Operador ternario para aplicar Theme dark/light de acuerdo al backgroundColor que tenga
   const themeIcon = theme === 'light' ? sun : moon
@@ -38,7 +38,7 @@ function MainSection(){
           <span>
             {/** links de redes sociales: Linkedin y GitHub */}
             <a href='https://github.com/Jeffer-Andres-Tafurth-Cortes' target='_blank'>
-              <img src={githubIcon} alt='Cuenta de Github' />
+              <img src={githubIcon} alt='Cuenta de Github'  />
             </a>
             <a href='https://www.linkedin.com/in/jeffer-andres-tafurth-cortes-369518212/' target='_blank'>
               <img src={linkedinIcon} alt='Cuenta de Linkedin' />

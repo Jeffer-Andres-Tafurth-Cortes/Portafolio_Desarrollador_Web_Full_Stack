@@ -19,7 +19,7 @@ export function ThemeProvider({ children }){
   }, [theme])
 
   const toogleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   }
 
   return (

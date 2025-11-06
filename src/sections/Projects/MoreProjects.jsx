@@ -10,7 +10,7 @@ function MoreProjects () {
   return (
     <section className={styles.container}>
       <h1 className='sectionTitle'>Más proyectos de desarrollo web</h1>
-      <p className={styles.textCaption}>Aquí tienes otros proyectos que he desarrollado con HTML, CSS y React.</p>
+      <p className={styles.textCaption}>Aquí tienes otros proyectos que he desarrollado con diferentes tecnologias Front End</p>
 
       <div className={styles.projectsContainer}>
         <ProjectCard 

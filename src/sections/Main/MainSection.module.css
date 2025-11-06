@@ -33,6 +33,11 @@
   a {
     width: fit-content;
     align-self: center;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out 
+  }
+
+  a:hover {
+    transform: scale(1.06);
   }
 
   button {

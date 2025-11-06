@@ -1,17 +1,19 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider, Outlet, Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from './sections/Contact/Contact'
 import Footer from './sections/Footer/Footer'
 import MainSection from './sections/Main/MainSection'
 import MoreProjects from './sections/Projects/MoreProjects'
 import Projects from './sections/Projects/Projects'
 import Skills from './sections/Skills/Skills'
+import Certifications from './sections/Certifications/Certifications';
 
 function RootLayout() {
   return (
     <>
       <MainSection />
       <Projects />
+      <Certifications />
       <Skills />
       <Contact />
       <Footer />
