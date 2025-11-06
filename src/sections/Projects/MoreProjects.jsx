@@ -54,7 +54,7 @@ function MoreProjects () {
         <ProjectCard 
           src={ImgPro5} 
           description='React & JavaScript'
-          link=''
+          link='https://jeffur-calculator-ts.netlify.app/'
           correoPrueba='No se necesita'
           contraseñaPrueba='autenticacion'
           title='Calculadora' 
