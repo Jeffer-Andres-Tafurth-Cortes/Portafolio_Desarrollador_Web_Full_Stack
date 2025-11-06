@@ -2,58 +2,40 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
-  img{
-    max-width: 300px;
-    align-self: center;
-    background-color: var(--proyect-card-bg);
-    border-radius: 20px;    
-  }
-
-  a {
-    width: fit-content;
-    text-decoration: none;
-    color: #222;
-    transition: transform 200ms ease-in-out;
-  }
-
-  a:hover{
-    transform: scale(1.05);
-  }
-}
-
-.projectsContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-
-  h3{
-    font-size: 20px;
-  }
-
-  p{
-    font-size: 12px;
-    font-weight: 450;
-  }
-}
-
-p{
-  font-size: 14px;
-  font-weight: 450;
+  padding: 2rem 0;
 }
 
 .textoCaption {
   margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #999;
 }
 
-@media (width >= 800px){
-  .projectsContainer{
-    flex-direction: row;
-    flex-wrap: wrap;
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* 🟢 Hace clickeable toda la tarjeta y mantiene el hover */
+.linkCard {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.linkCard:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 800px) {
+  .projectsContainer {
     justify-content: space-evenly;
     padding: 0 30px;
   }
 }
-

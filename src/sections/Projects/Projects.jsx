@@ -3,13 +3,15 @@ import ProjectCard from '../../common/ProjectCard'
 import ImaProject1 from '../../assets/ImagenProyectoTiendaOnline.png'
 import ImaProject2 from '../../assets/ImagenProyectoClonGitHub.png'
 import ImaProject3 from '../../assets/Proyecto_Clon_Red_Social.jpg'
+import ImaProject4 from '../../assets/More Projects.png'
+import { Link } from 'react-router-dom'
 
 function Projects () {
   return (
     <>
       <section id='projects' className={styles.container}>
         <h1 className='sectionTitle'>Proyectos</h1>
-        <p className={styles.textoCaption}>Posiblemente algun proyecto puede tardar algunos segundos en cargar</p>
+        <p className={styles.textCaption}>Posiblemente algun proyecto puede tardar algunos segundos en cargar</p>
         <div className={styles.projectsContainer}>
 
           <ProjectCard 
@@ -39,6 +41,21 @@ function Projects () {
             contraseñaPrueba='contraseña: 12345678'
           />
         
+          {/** Pagina extra donde estan los demas proyectos */}
+
+          <Link
+            to='/more-projects'
+            target='_blank'
+            className={styles.linkCard}
+          >
+            <ProjectCard
+              src={ImaProject4}
+              title='Mas Proyectos'
+              description="Ver más trabajos"
+              correoPrueba="Click"
+              contraseñaPrueba="para ver más"
+            />
+          </Link>
         </div>
       </section>
     </>

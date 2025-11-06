@@ -33,7 +33,7 @@ function MainSection(){
         </div>
 
         <div className={styles.info}>
-          <h1>Jeffer <br /> Tafurth</h1>
+          <h1>Jeffer Andres<br /> Tafurth Cortes</h1>
           <h2>Desarrollador Web Full Stack</h2>
           <span>
             {/** links de redes sociales: Linkedin y GitHub */}
