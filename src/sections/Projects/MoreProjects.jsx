@@ -4,6 +4,7 @@ import ImgPro1 from '../../assets/ImgPro1.png'
 import ImgPro2 from '../../assets/ImgPro2.png'
 import ImgPro3 from '../../assets/ImgPro3.png'
 import ImgPro4 from '../../assets/ImgPro4.png'
+import ImgPro5 from '../../assets/ImgPro5.png'
 
 
 function MoreProjects () {
@@ -34,7 +35,7 @@ function MoreProjects () {
 
         <ProjectCard 
           src={ImgPro3} 
-          description='HTML, CSS & TypeScript'
+          description='React & TypeScript'
           link='https://jeffur-quote-machine-ts.netlify.app/'
           correoPrueba='No se necesita'
           contraseñaPrueba='autenticacion'
@@ -43,7 +44,7 @@ function MoreProjects () {
 
         <ProjectCard 
           src={ImgPro4} 
-          description='HTML, CSS & TypeScript'
+          description='React & TypeScript'
           link='https://jeffur-drum-machine-ts.netlify.app/'
           correoPrueba='No se necesita'
           contraseñaPrueba='autenticacion'
@@ -51,8 +52,8 @@ function MoreProjects () {
         />
 
         <ProjectCard 
-          src={''} 
-          description='HTML, CSS & JavaScript'
+          src={ImgPro5} 
+          description='React & JavaScript'
           link=''
           correoPrueba='No se necesita'
           contraseñaPrueba='autenticacion'
