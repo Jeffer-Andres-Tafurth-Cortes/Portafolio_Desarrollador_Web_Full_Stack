@@ -7,6 +7,7 @@ import MoreProjects from './sections/Projects/MoreProjects'
 import Projects from './sections/Projects/Projects'
 import Skills from './sections/Skills/Skills'
 import Certifications from './sections/Certifications/Certifications';
+import ProjectsFullStack from './sections/Projects/ProjectsFullStack';
 
 function RootLayout() {
   return (
@@ -32,8 +33,12 @@ function App() {
     },
     {
       path: "/more-projects",
-      element: <MoreProjects />, // 🔹 Página de galería
+      element: <MoreProjects />, // 🔹 Página de galería proyectos frontend
     },
+    {
+      path: '/projects-fullstack',
+      element: <ProjectsFullStack /> // 🔹 Página de galería proyectos fullstack
+    }
   ]);
 
   return <RouterProvider router={router} />;

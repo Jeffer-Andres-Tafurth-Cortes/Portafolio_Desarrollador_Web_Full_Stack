@@ -44,8 +44,8 @@ function Projects () {
           {/** Paginas extra donde estan los demas proyectos */}
 
           <Link 
-            to='/'
-            target='_blank' 
+            to='/projects-fullstack'
+            target='_blank'
             className={styles.linkCard}
           >
             <ProjectCard
