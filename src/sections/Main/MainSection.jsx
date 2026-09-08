@@ -1,12 +1,12 @@
 import styles from './MainSection.module.css'
-import FotoPerfil from '../../Imagenes/FotoPerfil.jpg'
+import FotoProfesional from '../../Imagenes/FotoProfesional.jpeg'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.svg'
 import gitHubLight from '../../assets/github-light.svg'
 import gitHubDark from '../../assets/github-dark.svg'
 import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
-import cv from '../../assets/HV JEFFER TAFURTH.pdf'
+import cv from '../../assets/CV_Jeffer_Andres_Tafurth_Cortes.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 function MainSection(){
@@ -19,14 +19,13 @@ function MainSection(){
   const githubIcon = theme === 'light' ? gitHubLight : gitHubDark
   const linkedinIcon = theme === 'light'? linkedinLight : linkedinDark
 
- 
   return (
     <>
       <section id='mainSection' className={styles.container}>
 
         <div className={styles.colorModeContainer}>
           {/** Imagen de perfil */}
-          <img className={styles.mainSection} src={FotoPerfil} alt='Foto Perfil' />
+          <img className={styles.profileImage} src={FotoProfesional} alt='Foto Profesional' />
 
           {/** Imagen Clickeable para el cambio de theme dark/light */}
           <img className={styles.colorMode} src={themeIcon} alt='Cambiar dark-light' onClick={toogleTheme} />
@@ -47,9 +46,9 @@ function MainSection(){
           <p className={styles.description}>
             Desarrollador web Full stack Junior apasionado por la creación de aplicaciones web dinámicas y funcionales.
           </p>
-          <a href={cv} download>
+          <a href={cv} download >
             {/** Boton para descargar CV */}
-            <button className='hover'>Descarga mi CV</button>
+            <button className={styles.cvButton} >Descarga mi HV</button>
           </a>
         </div>
       </section>

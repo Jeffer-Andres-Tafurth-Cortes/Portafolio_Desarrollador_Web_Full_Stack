@@ -1,110 +1,227 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 45px;
   text-align: center;
-  height: 100dvh;
-  min-height: 500px;
-
-  .mainSection{
-    max-width: 200px;
-  }
-
-  span {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-
-    a {
-      margin: 0;
-
-      img {
-        width: 45px;
-      }
-    }
-  }
-  
-  img {
-    border: none;
-    border-radius: 50%;
-  }
-
-  a {
-    width: fit-content;
-    align-self: center;
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out 
-  }
-
-  a:hover {
-    transform: scale(1.06);
-  }
-
-  button {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out ;
-  }
-
-  button:hover {
-    transform: scale(1.05);
-  }
-
-  button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);  
-  }
+  min-height: 100dvh;
+  padding: 80px 20px 40px;
+  box-sizing: border-box;
 }
 
+/* Contenedor de la foto */
 .colorModeContainer {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Foto de perfil */
+.profileImage {
+  width: clamp(220px, 60vw, 320px);
+  aspect-ratio: 1 / 1.20;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--btn-color);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20);
+  display: block;
+}
+
+/* Botón para cambiar el tema */
 .colorMode {
   position: absolute;
-  width: 35px;
+  right: -5px;
+  bottom: 15px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
 }
 
 .colorMode:hover {
-  cursor: pointer;
+  transform: scale(1.1) rotate(10deg);
 }
 
-.description {
-  max-width: 24ch;
-  align-self: center;
-}
-
+/* Información */
 .info {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 18px;
+  max-width: 600px;
 }
 
-@media (width >= 800px){
-  .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+.info h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+}
 
-    .mainSection {
-      max-width: 350px;
-      width: 350px;
-    }
+.info h2 {
+  margin: 0;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Redes sociales */
+.info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 5px;
+}
+
+.info span a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 200ms ease-in-out;
+}
+
+.info span a:hover {
+  transform: scale(1.15);
+}
+
+.info span img {
+  width: 42px;
+  height: 42px;
+}
+
+/* Descripción */
+.description {
+  max-width: 50ch;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Botón CV */
+.cvButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+
+  border: none;
+  border-radius: 14px;
+
+  width: 150px;
+  height: 50px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+
+  cursor: pointer;
+
+  transition:
+    transform 200ms ease-in-out,
+    box-shadow 200ms ease-in-out;
+}
+
+.cvButton:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.cvButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   TABLET / DESKTOP
+   ========================= */
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: left;
+    padding: 60px;
+  }
+
+  .colorModeContainer {
+    flex-shrink: 0;
+  }
+
+  .profileImage {
+    width: 340px;
+  }
+
+  .info {
+    align-items: flex-start;
+  }
+
+  .info span {
+    justify-content: flex-start;
+  }
+
+  .description {
+    max-width: 50ch;
   }
 }
 
-@media (width >= 1400px){
+
+/* =========================
+   PANTALLAS GRANDES
+   ========================= */
+
+@media (min-width: 1400px) {
   .container {
-    .mainSection {
-      max-width: 400px;
-      width: 400px;
-    }
+    gap: 140px;
+  }
+
+  .profileImage {
+    width: 400px;
+  }
+
+  .info h1 {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* =========================
+   CELULARES PEQUEÑOS
+   ========================= */
+
+@media (max-width: 400px) {
+  .container {
+    gap: 30px;
+    padding-top: 70px;
+  }
+
+  .profileImage {
+    width: 210px;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+  }
+
+  .info h2 {
+    font-size: 1rem;
   }
 }

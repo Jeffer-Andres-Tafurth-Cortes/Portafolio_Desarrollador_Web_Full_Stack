@@ -41,7 +41,21 @@ function Projects () {
             contraseñaPrueba='contraseña: 12345678'
           />
         
-          {/** Pagina extra donde estan los demas proyectos */}
+          {/** Paginas extra donde estan los demas proyectos */}
+
+          <Link 
+            to='/'
+            target='_blank' 
+            className={styles.linkCard}
+          >
+            <ProjectCard
+              src={ImaProject4}
+              title='Mas Proyectos full stack'
+              description="Ver más trabajos"
+              correoPrueba="Click"
+              contraseñaPrueba="para ver más"
+            />
+          </Link>
 
           <Link
             to='/more-projects'
@@ -50,7 +64,7 @@ function Projects () {
           >
             <ProjectCard
               src={ImaProject4}
-              title='Mas Proyectos'
+              title='Mas Proyectos frontend'
               description="Ver más trabajos"
               correoPrueba="Click"
               contraseñaPrueba="para ver más"

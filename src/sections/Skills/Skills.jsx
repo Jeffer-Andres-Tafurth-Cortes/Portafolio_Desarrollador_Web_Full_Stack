@@ -21,6 +21,7 @@ function Skills(){
         <SkillList src={checkMarkIcon} skill='PHP' />
         <SkillList src={checkMarkIcon} skill='NodeJS' />
         <SkillList src={checkMarkIcon} skill='C#' />
+        <SkillList src={checkMarkIcon} skill='Python' />
       </div>
       <hr />
       <div className={styles.skillList}>
@@ -32,6 +33,7 @@ function Skills(){
       <SkillList src={checkMarkIcon} skill='MongoDB' />
       <SkillList src={checkMarkIcon} skill='PostgreSQL' />
       <SkillList src={checkMarkIcon} skill='ExpressJS' />
+      <SkillList src={checkMarkIcon} skill='FastApi' />
       </div>
       <hr />
       <div className={styles.skillList}>
